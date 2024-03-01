@@ -1,0 +1,79 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: inherit;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+:root{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+input, button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+  //  max-width: 800px;
+  width: min(400px, 100%);
+   border: 1px solid #000;
+   border-radius: 12px;
+   padding: 15px;
+
+   // position
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   input, button{
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+   }
+}
+
+.back {
+  display: flex;
+  justify-content: end;
+}
+
+.user {
+  border-radius: 100%;
+  border: 1px solid #000;
+  display: block;
+  padding: 5px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #b1b1b1;
+  }
+}
+
+
+main {
+  padding: 40px;
+}
